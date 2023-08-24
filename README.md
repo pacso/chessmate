@@ -13,8 +13,8 @@ This repository contains a Docker Compose setup for running Jupyter Notebooks. I
 1. **Clone the Repository:**
 
 ```
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name/
+git clone https://github.com/pacso/chessmate.git
+cd chessmate/
 ```
 
 2. **Using Docker Compose to Run Jupyter Notebook:**
