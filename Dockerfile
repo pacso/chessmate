@@ -1,7 +1,7 @@
 FROM jupyter/base-notebook:latest
 
-# Optionally, install additional Python packages
-# RUN pip install some_package another_package
+# Install additional Python packages
+RUN pip install python-chess
 
 # COPY your notebook into the container
 RUN mkdir /home/jovyan/chessmate
@@ -11,4 +11,4 @@ COPY . /home/jovyan/chessmate/
 EXPOSE 8888
 
 # Defualt command to run Jupyter Notebook
-CMD ["start-notebook.sh", "--NotebookApp.token=''"]
+CMD ["start-notebook.sh", "--NotebookApp.token=''", "--NotebookApp.password=''", "--NotebookApp.allow_origin='*'"]
